@@ -15,9 +15,9 @@ Fonctionnalité: Listage des livres empruntés
     Quand on liste tous les emprunts
     Alors the stdout should contain exactly:
     """
-    Nom0 :: [ Auteurs0 ] "titre0"
-    Nom1 :: [ Auteurs1 ] "titre1"
-    Nom1 :: [ Auteurs2 ] "tres_long_titre2"
+    Nom0 :: [ Auteurs0   ] "titre0"
+    Nom1 :: [ Auteurs1   ] "titre1"
+    Nom1 :: [ Auteurs2   ] "tres_long_titre2"
 
     """
 
@@ -33,8 +33,8 @@ Fonctionnalité: Listage des livres empruntés
     Quand on liste tous les emprunts
     Alors the stdout should contain exactly:
     """
-    Nom1 :: [ Auteurs1 ] "titre1"
-    Nom1 :: [ Auteurs2 ] "tres_long_titre2"
+    Nom1 :: [ Auteurs1   ] "titre1"
+    Nom1 :: [ Auteurs2   ] "tres_long_titre2"
 
     """
 
@@ -49,8 +49,8 @@ Fonctionnalité: Listage des livres empruntés
     Quand j'exécute avec "lister --inclure_perdus"
     Alors the stdout should contain exactly:
     """
-    Nom0 :: [ Auteurs0 ] "titre0" <<PERDU>>
-    Nom1 :: [ Auteurs2 ] "tres_long_titre2"
+    Nom0 :: [ Auteurs0   ] "titre0" <<PERDU>>
+    Nom1 :: [ Auteurs2   ] "tres_long_titre2"
 
     """
 
